@@ -1,5 +1,5 @@
 # Automatic selection of primary studies in systematic reviews with evolutionary rule-based classification
-_Supplementary material_ (January 2026)
+_Supplementary material_ (October 2026)
 
 ## Authors
 - José de la Torre-López
@@ -37,4 +37,4 @@ This repository includes the following directories:
 
 - [code](https://github.com/humains-lab/2026_IRECS/tree/main/code): Source code of IRECS, developed in Python. A requirements.txt file is included to install required packages.
 - [datasets](https://github.com/humains-lab/2026_IRECS/tree/main/datasets): The datasets used for experimentation.
-- [results](https://github.com/humains-lab/2026_IRECS/tree/main/results): Detailed results of classification performance. The folder includes a spreadsheet with the experimental results by RQ, files with the best rules found by IRECS for each dataset (RQ3) and statistical tests (RQ4).
+- [results](https://github.com/humains-lab/2026_IRECS/tree/main/results): Detailed results of classification performance. The folder includes vocabulary validation results in train and test folds, comparison results agains RF (Random Forest), a spreadsheet with the experimental results by RQ, files with the best rules found by IRECS for each dataset (RQ3) and statistical tests (RQ4).
