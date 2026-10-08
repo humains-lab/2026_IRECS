@@ -1,0 +1,177 @@
+2026-10-03 11:01:50.928232 | New Experiment
+2026-10-03 11:01:50.928365 | Config. details:
+2026-10-03 11:01:50.928566 | Dataset: assets/Kitchenham.csv
+2026-10-03 11:01:50.928603 | Grammar: assets/ml.xml
+2026-10-03 11:01:50.928639 | Num. Folds: 5
+2026-10-03 11:01:50.928674 | Max. Generations: 10
+2026-10-03 11:01:50.928708 | Population size: 30
+2026-10-03 11:01:50.928745 | Fitness Threshold: 0.4
+2026-10-03 11:01:50.928783 | Replacement Strategy: ReplacementStrategy.NEWPOPULATION
+2026-10-03 11:01:50.928823 | Classification Strategy: ClassificationStrategy.CBA
+2026-10-03 11:01:50.928861 | Fitness Strategy: FitnessStrategy.CURRENT
+2026-10-03 11:01:50.928894 | Seed: 1
+2026-10-03 11:01:50.928927 | Loading data...
+2026-10-03 11:01:50.945910 | Data loaded. 0.017s.
+2026-10-03 11:01:50.946007 | Preparing text mining...
+2026-10-03 11:01:51.022979 | Text mining done. 0.077s.
+2026-10-03 11:01:51.023079 | Initializing classifier...
+2026-10-03 11:01:51.023777 | Classifier initialized. 0.001s.
+2026-10-03 11:01:51.023821 | Training...
+2026-10-03 11:01:51.023865 | Fold 0
+2026-10-03 11:01:51.593783 | Current gen.: 2 & AVG fitness: 0
+2026-10-03 11:01:52.164743 | Current gen.: 4 & AVG fitness: 0
+2026-10-03 11:01:52.694121 | Current gen.: 6 & AVG fitness: 0
+2026-10-03 11:01:53.209863 | Current gen.: 8 & AVG fitness: 0
+2026-10-03 11:01:53.764361 | Current gen.: 10 & AVG fitness: 0
+2026-10-03 11:01:53.764511 | 0 rules are selected
+2026-10-03 11:01:53.764731 | 1363 instances are not covered
+2026-10-03 11:01:53.764786 | 0 rules are selected
+2026-10-03 11:01:53.764829 | 1363 instances are not covered
+2026-10-03 11:01:53.764876 | Classifier rules:
+2026-10-03 11:01:53.764923 | |+rules=0-rules=0|
+
+=== FOLD 0: train=1363 test=341 rules=0 rules_using_vocab=0 ===
+word          used_in_rules  train_docs(substr)  train_stem_match  test_docs(substr) STATUS
+system        False          617                 True              159               OK
+inform        False          384                 True              92                OK
+engin         False          327                 True              96                OK
+process       False          437                 True              101               OK
+develop       False          612                 True              161               OK
+data          False          384                 True              98                OK
+research      False          451                 True              119               OK
+model         False          477                 True              119               OK
+base          False          646                 True              167               OK
+softwar       False          535                 True              142               OK
+2026-10-03 11:01:55.090021 | Fold 1
+2026-10-03 11:01:55.690136 | Current gen.: 2 & AVG fitness: 0
+2026-10-03 11:01:56.277494 | Current gen.: 4 & AVG fitness: 0
+2026-10-03 11:01:56.850779 | Current gen.: 6 & AVG fitness: 0
+2026-10-03 11:01:57.463732 | Current gen.: 8 & AVG fitness: 0
+2026-10-03 11:01:57.963055 | Current gen.: 10 & AVG fitness: 0
+2026-10-03 11:01:57.963207 | 0 rules are selected
+2026-10-03 11:01:57.963423 | 1363 instances are not covered
+2026-10-03 11:01:57.963471 | 0 rules are selected
+2026-10-03 11:01:57.963511 | 1363 instances are not covered
+2026-10-03 11:01:57.963558 | Classifier rules:
+2026-10-03 11:01:57.963604 | |+rules=0-rules=0|
+
+=== FOLD 1: train=1363 test=341 rules=0 rules_using_vocab=0 ===
+word          used_in_rules  train_docs(substr)  train_stem_match  test_docs(substr) STATUS
+system        False          605                 True              171               OK
+inform        False          385                 True              91                OK
+engin         False          347                 True              76                OK
+process       False          430                 True              108               OK
+develop       False          628                 True              145               OK
+data          False          396                 True              86                OK
+research      False          462                 True              108               OK
+model         False          468                 True              128               OK
+base          False          654                 True              159               OK
+softwar       False          550                 True              127               OK
+2026-10-03 11:01:59.302275 | Fold 2
+2026-10-03 11:01:59.899401 | Current gen.: 2 & AVG fitness: 0
+2026-10-03 11:02:00.459674 | Current gen.: 4 & AVG fitness: 0
+2026-10-03 11:02:01.022052 | Current gen.: 6 & AVG fitness: 0
+2026-10-03 11:02:01.593797 | Current gen.: 8 & AVG fitness: 0
+2026-10-03 11:02:02.221496 | Current gen.: 10 & AVG fitness: 0
+2026-10-03 11:02:02.221621 | 0 rules are selected
+2026-10-03 11:02:02.221670 | 1363 instances are not covered
+2026-10-03 11:02:02.221718 | 0 rules are selected
+2026-10-03 11:02:02.221759 | 1363 instances are not covered
+2026-10-03 11:02:02.221800 | Classifier rules:
+2026-10-03 11:02:02.221840 | |+rules=0-rules=0|
+
+=== FOLD 2: train=1363 test=341 rules=0 rules_using_vocab=0 ===
+word          used_in_rules  train_docs(substr)  train_stem_match  test_docs(substr) STATUS
+system        False          622                 True              154               OK
+inform        False          383                 True              93                OK
+engin         False          343                 True              80                OK
+process       False          433                 True              105               OK
+develop       False          598                 True              175               OK
+data          False          387                 True              95                OK
+research      False          450                 True              120               OK
+model         False          475                 True              121               OK
+base          False          651                 True              162               OK
+softwar       False          543                 True              134               OK
+2026-10-03 11:02:03.570573 | Fold 3
+2026-10-03 11:02:04.119732 | Current gen.: 2 & AVG fitness: 0
+2026-10-03 11:02:04.711063 | Current gen.: 4 & AVG fitness: 0
+2026-10-03 11:02:05.258222 | Current gen.: 6 & AVG fitness: 0
+2026-10-03 11:02:05.749295 | Current gen.: 8 & AVG fitness: 0
+2026-10-03 11:02:06.306428 | Current gen.: 10 & AVG fitness: 0
+2026-10-03 11:02:06.306571 | 0 rules are selected
+2026-10-03 11:02:06.306788 | 1363 instances are not covered
+2026-10-03 11:02:06.306836 | 0 rules are selected
+2026-10-03 11:02:06.306879 | 1363 instances are not covered
+2026-10-03 11:02:06.306924 | Classifier rules:
+2026-10-03 11:02:06.306967 | |+rules=0-rules=0|
+
+=== FOLD 3: train=1363 test=341 rules=0 rules_using_vocab=0 ===
+word          used_in_rules  train_docs(substr)  train_stem_match  test_docs(substr) STATUS
+system        False          626                 True              150               OK
+inform        False          367                 True              109               OK
+engin         False          334                 True              89                OK
+process       False          435                 True              103               OK
+develop       False          634                 True              139               OK
+data          False          378                 True              104               OK
+research      False          464                 True              106               OK
+model         False          481                 True              115               OK
+base          False          652                 True              161               OK
+softwar       False          526                 True              151               OK
+2026-10-03 11:02:07.630913 | Fold 4
+2026-10-03 11:02:08.192769 | Current gen.: 2 & AVG fitness: 0
+2026-10-03 11:02:08.781319 | Current gen.: 4 & AVG fitness: 0
+2026-10-03 11:02:09.327210 | Current gen.: 6 & AVG fitness: 0
+2026-10-03 11:02:09.883341 | Current gen.: 8 & AVG fitness: 0
+2026-10-03 11:02:10.439758 | Current gen.: 10 & AVG fitness: 0
+2026-10-03 11:02:10.439898 | 0 rules are selected
+2026-10-03 11:02:10.440114 | 1364 instances are not covered
+2026-10-03 11:02:10.440185 | 0 rules are selected
+2026-10-03 11:02:10.440230 | 1364 instances are not covered
+2026-10-03 11:02:10.440273 | Classifier rules:
+2026-10-03 11:02:10.440320 | |+rules=0-rules=0|
+
+=== FOLD 4: train=1364 test=340 rules=0 rules_using_vocab=0 ===
+word          used_in_rules  train_docs(substr)  train_stem_match  test_docs(substr) STATUS
+system        False          634                 True              142               OK
+inform        False          385                 True              91                OK
+engin         False          341                 True              82                OK
+process       False          417                 True              121               OK
+develop       False          620                 True              153               OK
+data          False          383                 True              99                OK
+research      False          453                 True              117               OK
+model         False          483                 True              113               OK
+base          False          649                 True              164               OK
+softwar       False          554                 True              123               OK
+2026-10-03 11:02:11.772437 | Training done. 20.749s.
+2026-10-03 11:02:11.772576 | Testing...
+2026-10-03 11:02:11.773529 | Fold 0
+2026-10-03 11:02:11.773582 | accuracy,precision,recall,specificity,fmeasure,tp,fp,tn,fn,balancedAcc
+0.9736070381231672,0.0,0.0,1.0,0,0,0,332,9,0.5,0.5,0
+2026-10-03 11:02:11.774529 | Fold 1
+2026-10-03 11:02:11.774570 | accuracy,precision,recall,specificity,fmeasure,tp,fp,tn,fn,balancedAcc
+0.9736070381231672,0.0,0.0,1.0,0,0,0,332,9,0.5,0.5,0
+2026-10-03 11:02:11.775430 | Fold 2
+2026-10-03 11:02:11.775469 | accuracy,precision,recall,specificity,fmeasure,tp,fp,tn,fn,balancedAcc
+0.9736070381231672,0.0,0.0,1.0,0,0,0,332,9,0.5,0.5,0
+2026-10-03 11:02:11.776311 | Fold 3
+2026-10-03 11:02:11.776350 | accuracy,precision,recall,specificity,fmeasure,tp,fp,tn,fn,balancedAcc
+0.9736070381231672,0.0,0.0,1.0,0,0,0,332,9,0.5,0.5,0
+2026-10-03 11:02:11.777184 | Fold 4
+2026-10-03 11:02:11.777220 | accuracy,precision,recall,specificity,fmeasure,tp,fp,tn,fn,balancedAcc
+0.9735294117647059,0.0,0.0,1.0,0,0,0,331,9,0.5,0.5,0
+2026-10-03 11:02:11.777621 | Avg. accuracy: 0.973592
+2026-10-03 11:02:11.777653 | Avg. precision: 0.000000
+2026-10-03 11:02:11.777685 | Avg. recall: 0.000000
+2026-10-03 11:02:11.777717 | Avg. specificity: 1.000000
+2026-10-03 11:02:11.777749 | dataset;classStrategy;replStrategy;balAcc;accuracy;precision;recall;specificity;seed
+2026-10-03 11:02:11.777850 | Testing done. 0.005s.
+2026-10-03 11:02:11.777884 | Experiment End. 20.850s.
+2026-10-03 11:02:11.777920 | -------------
+
+=== SUMMARY ===
+Vocabulary: ['system', 'inform', 'engin', 'process', 'develop', 'data', 'research', 'model', 'base', 'softwar']
+Fold 0: ALL vocabulary words present in train
+Fold 1: ALL vocabulary words present in train
+Fold 2: ALL vocabulary words present in train
+Fold 3: ALL vocabulary words present in train
+Fold 4: ALL vocabulary words present in train

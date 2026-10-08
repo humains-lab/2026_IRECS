@@ -1,0 +1,198 @@
+2026-10-03 11:00:01.070030 | New Experiment
+2026-10-03 11:00:01.070148 | Config. details:
+2026-10-03 11:00:01.070356 | Dataset: assets/HallComplete.csv
+2026-10-03 11:00:01.070390 | Grammar: assets/ml.xml
+2026-10-03 11:00:01.070423 | Num. Folds: 5
+2026-10-03 11:00:01.070456 | Max. Generations: 10
+2026-10-03 11:00:01.070488 | Population size: 30
+2026-10-03 11:00:01.070530 | Fitness Threshold: 0.4
+2026-10-03 11:00:01.070564 | Replacement Strategy: ReplacementStrategy.NEWPOPULATION
+2026-10-03 11:00:01.070645 | Classification Strategy: ClassificationStrategy.CBA
+2026-10-03 11:00:01.070702 | Fitness Strategy: FitnessStrategy.CURRENT
+2026-10-03 11:00:01.070745 | Seed: 1
+2026-10-03 11:00:01.070784 | Loading data...
+2026-10-03 11:00:01.142703 | Data loaded. 0.072s.
+2026-10-03 11:00:01.142822 | Preparing text mining...
+2026-10-03 11:00:01.505070 | Text mining done. 0.362s.
+2026-10-03 11:00:01.505245 | Initializing classifier...
+2026-10-03 11:00:01.508084 | Classifier initialized. 0.003s.
+2026-10-03 11:00:01.508123 | Training...
+2026-10-03 11:00:01.508157 | Fold 0
+2026-10-03 11:00:04.175555 | Current gen.: 2 & AVG fitness: 0
+2026-10-03 11:00:06.866072 | Current gen.: 4 & AVG fitness: 0.42885535815689135
+2026-10-03 11:00:09.674538 | Current gen.: 6 & AVG fitness: 0.42142248722316866
+2026-10-03 11:00:12.530952 | Current gen.: 8 & AVG fitness: 0.42142248722316866
+2026-10-03 11:00:15.199897 | Current gen.: 10 & AVG fitness: 0.44313701630567043
+2026-10-03 11:00:15.294510 | 2 rules are selected
+2026-10-03 11:00:15.294590 | 7051 instances are not covered
+2026-10-03 11:00:15.418472 | 5 rules are selected
+2026-10-03 11:00:15.418596 | 85 instances are not covered
+2026-10-03 11:00:15.419010 | Classifier rules:
+2026-10-03 11:00:15.419066 | Rule 1: <= nCites 22 equals isCandidate False | Fitness: 0.4140 | Confidence: 0.0000
+2026-10-03 11:00:15.419127 | Rule 2: and containsAny title ['softwar'] < nAuthors 11 equals isCandidate True | Fitness: 0.4289 | Confidence: 0.0000
+2026-10-03 11:00:15.419181 | Rule 3: not containsAll title ['softwar'] equals isCandidate False | Fitness: 0.4561 | Confidence: 0.0000
+2026-10-03 11:00:15.419237 | Rule 4: and containsAll abstract ['softwar' 'softwar' 'softwar'] not <= year 2000 equals isCandidate True | Fitness: 0.5235 | Confidence: 0.0000
+2026-10-03 11:00:15.419282 | Rule 5: not >= nCites 13 equals isCandidate False | Fitness: 0.4641 | Confidence: 0.0000
+2026-10-03 11:00:15.419553 | |+rules=2-rules=3|
+
+=== FOLD 0: train=7128 test=1783 rules=5 rules_using_vocab=3 ===
+word          used_in_rules  train_docs(substr)  train_stem_match  test_docs(substr) STATUS
+paper         False          4639                True              1141              OK
+model         False          2151                True              532               OK
+use           False          4039                True              1023              OK
+data          False          1821                True              470               OK
+method        False          2733                True              690               OK
+softwar       True           1638                True              421               OK
+fault         False          4217                True              1085              OK
+base          False          3773                True              928               OK
+error         False          2436                True              619               OK
+2026-10-03 11:00:22.078664 | Fold 1
+2026-10-03 11:00:24.865145 | Current gen.: 2 & AVG fitness: 0.4451731970471323
+2026-10-03 11:00:27.716024 | Current gen.: 4 & AVG fitness: 0.4330460633998063
+2026-10-03 11:00:30.658600 | Current gen.: 6 & AVG fitness: 0.4446460901225908
+2026-10-03 11:00:34.389047 | Current gen.: 8 & AVG fitness: 0.4446460901225908
+2026-10-03 11:00:37.694458 | Current gen.: 10 & AVG fitness: 0.4337128207330633
+2026-10-03 11:00:37.782036 | 2 rules are selected
+2026-10-03 11:00:37.782173 | 7061 instances are not covered
+2026-10-03 11:00:37.921717 | 6 rules are selected
+2026-10-03 11:00:37.921849 | 167 instances are not covered
+2026-10-03 11:00:37.922349 | Classifier rules:
+2026-10-03 11:00:37.922404 | Rule 1: and < nCites 21 < nCites 22 equals isCandidate False | Fitness: 0.4170 | Confidence: 0.0000
+2026-10-03 11:00:37.922462 | Rule 2: containsAny title ['softwar' 'use'] equals isCandidate True | Fitness: 0.4090 | Confidence: 0.0000
+2026-10-03 11:00:37.922517 | Rule 3: and containsAll titleAbstract ['use' 'use' 'softwar' 'softwar'] < year 2023 equals isCandidate True | Fitness: 0.4037 | Confidence: 0.0000
+2026-10-03 11:00:37.922571 | Rule 4: not containsAll titleAbstract ['softwar' 'fault'] equals isCandidate False | Fitness: 0.4195 | Confidence: 0.0000
+2026-10-03 11:00:37.922624 | Rule 5: and <= nCites 19 not containsAll abstract ['model' 'paper'] equals isCandidate False | Fitness: 0.4733 | Confidence: 0.0000
+2026-10-03 11:00:37.922676 | Rule 6: not containsAny titleAbstract ['softwar' 'model' 'model'] equals isCandidate False | Fitness: 0.5046 | Confidence: 0.0000
+2026-10-03 11:00:37.923004 | |+rules=2-rules=4|
+
+=== FOLD 1: train=7129 test=1782 rules=6 rules_using_vocab=5 ===
+word          used_in_rules  train_docs(substr)  train_stem_match  test_docs(substr) STATUS
+paper         True           4619                True              1161              OK
+model         True           2158                True              525               OK
+use           True           4048                True              1014              OK
+data          False          1824                True              467               OK
+method        False          2739                True              684               OK
+softwar       True           1651                True              408               OK
+fault         True           4238                True              1064              OK
+base          False          3763                True              938               OK
+error         False          2432                True              623               OK
+2026-10-03 11:00:44.608018 | Fold 2
+2026-10-03 11:00:47.337484 | Current gen.: 2 & AVG fitness: 0.4293165647860507
+2026-10-03 11:00:49.885111 | Current gen.: 4 & AVG fitness: 0.43924867221164443
+2026-10-03 11:00:52.749320 | Current gen.: 6 & AVG fitness: 0.49461869926846375
+2026-10-03 11:00:55.760007 | Current gen.: 8 & AVG fitness: 0.5199882252730734
+2026-10-03 11:00:58.566390 | Current gen.: 10 & AVG fitness: 0.5214842836623576
+2026-10-03 11:00:58.833486 | 3 rules are selected
+2026-10-03 11:00:58.833624 | 7047 instances are not covered
+2026-10-03 11:00:59.101236 | 3 rules are selected
+2026-10-03 11:00:59.101372 | 7047 instances are not covered
+2026-10-03 11:00:59.101745 | Classifier rules:
+2026-10-03 11:00:59.101815 | Rule 1: containsAny title ['data' 'softwar' 'data'] equals isCandidate True | Fitness: 0.4492 | Confidence: 0.0000
+2026-10-03 11:00:59.101886 | Rule 2: and containsAny abstract ['softwar' 'base'] containsAll titleAbstract ['model'] equals isCandidate True | Fitness: 0.4293 | Confidence: 0.0000
+2026-10-03 11:00:59.101941 | Rule 3: containsAll titleAbstract ['softwar'] equals isCandidate True | Fitness: 0.6054 | Confidence: 0.0000
+2026-10-03 11:00:59.102135 | |+rules=3-rules=0|
+
+=== FOLD 2: train=7129 test=1782 rules=3 rules_using_vocab=3 ===
+word          used_in_rules  train_docs(substr)  train_stem_match  test_docs(substr) STATUS
+paper         False          4624                True              1156              OK
+model         True           2170                True              513               OK
+use           False          4021                True              1041              OK
+data          True           1826                True              465               OK
+method        False          2745                True              678               OK
+softwar       True           1657                True              402               OK
+fault         False          4251                True              1051              OK
+base          True           3742                True              959               OK
+error         False          2459                True              596               OK
+2026-10-03 11:01:05.740026 | Fold 3
+2026-10-03 11:01:08.344989 | Current gen.: 2 & AVG fitness: 0.4815412365968534
+2026-10-03 11:01:11.167190 | Current gen.: 4 & AVG fitness: 0.4321005361258643
+2026-10-03 11:01:14.110435 | Current gen.: 6 & AVG fitness: 0.45524685172194945
+2026-10-03 11:01:17.412424 | Current gen.: 8 & AVG fitness: 0.4712054838971364
+2026-10-03 11:01:20.962420 | Current gen.: 10 & AVG fitness: 0.4712054838971364
+2026-10-03 11:01:21.069764 | 2 rules are selected
+2026-10-03 11:01:21.069871 | 7050 instances are not covered
+2026-10-03 11:01:21.206597 | 6 rules are selected
+2026-10-03 11:01:21.206727 | 41 instances are not covered
+2026-10-03 11:01:21.207230 | Classifier rules:
+2026-10-03 11:01:21.207287 | Rule 1: not > nCites 16 equals isCandidate False | Fitness: 0.4300 | Confidence: 0.0000
+2026-10-03 11:01:21.207349 | Rule 2: not containsAny title ['softwar'] equals isCandidate False | Fitness: 0.4614 | Confidence: 0.0000
+2026-10-03 11:01:21.207410 | Rule 3: and containsAll titleAbstract ['model' 'softwar'] <= nAuthors 19 equals isCandidate True | Fitness: 0.5416 | Confidence: 0.0000
+2026-10-03 11:01:21.207470 | Rule 4: and containsAny abstract ['base' 'data' 'softwar'] not <= nCites 10 equals isCandidate True | Fitness: 0.4040 | Confidence: 0.0000
+2026-10-03 11:01:21.207526 | Rule 5: not containsAll abstract ['data'] equals isCandidate False | Fitness: 0.4815 | Confidence: 0.0000
+2026-10-03 11:01:21.207582 | Rule 6: and > year 2003 not containsAny titleAbstract ['softwar'] equals isCandidate False | Fitness: 0.5670 | Confidence: 0.0000
+2026-10-03 11:01:21.207900 | |+rules=2-rules=4|
+
+=== FOLD 3: train=7129 test=1782 rules=6 rules_using_vocab=5 ===
+word          used_in_rules  train_docs(substr)  train_stem_match  test_docs(substr) STATUS
+paper         False          4607                True              1173              OK
+model         True           2105                True              578               OK
+use           False          4061                True              1001              OK
+data          True           1834                True              457               OK
+method        False          2730                True              693               OK
+softwar       True           1614                True              445               OK
+fault         False          4252                True              1050              OK
+base          True           3762                True              939               OK
+error         False          2446                True              609               OK
+2026-10-03 11:01:27.995092 | Fold 4
+2026-10-03 11:01:30.998009 | Current gen.: 2 & AVG fitness: 0
+2026-10-03 11:01:33.663320 | Current gen.: 4 & AVG fitness: 0.4356139559742125
+2026-10-03 11:01:36.546394 | Current gen.: 6 & AVG fitness: 0.4469239569763169
+2026-10-03 11:01:39.180793 | Current gen.: 8 & AVG fitness: 0.4716250793332665
+2026-10-03 11:01:41.929980 | Current gen.: 10 & AVG fitness: 0.4652408947679015
+2026-10-03 11:01:42.023300 | 2 rules are selected
+2026-10-03 11:01:42.023384 | 7058 instances are not covered
+2026-10-03 11:01:42.116323 | 6 rules are selected
+2026-10-03 11:01:42.116458 | 57 instances are not covered
+2026-10-03 11:01:42.116933 | Classifier rules:
+2026-10-03 11:01:42.116991 | Rule 1: <= nCites 19 equals isCandidate False | Fitness: 0.4129 | Confidence: 0.0000
+2026-10-03 11:01:42.117050 | Rule 2: and <= nAuthors 7 not containsAny title ['model' 'softwar' 'model'] equals isCandidate False | Fitness: 0.4583 | Confidence: 0.0000
+2026-10-03 11:01:42.117102 | Rule 3: and < nAuthors 14 containsAll title ['softwar'] equals isCandidate True | Fitness: 0.4333 | Confidence: 0.0000
+2026-10-03 11:01:42.117154 | Rule 4: not containsAny titleAbstract ['data'] equals isCandidate False | Fitness: 0.4624 | Confidence: 0.0000
+2026-10-03 11:01:42.117233 | Rule 5: and containsAny abstract ['softwar'] not > nAuthors 3 equals isCandidate True | Fitness: 0.4541 | Confidence: 0.0000
+2026-10-03 11:01:42.117292 | Rule 6: and < nCites 29 not containsAll titleAbstract ['data' 'model' 'softwar'] equals isCandidate False | Fitness: 0.5704 | Confidence: 0.0000
+2026-10-03 11:01:42.117608 | |+rules=2-rules=4|
+
+=== FOLD 4: train=7129 test=1782 rules=6 rules_using_vocab=5 ===
+word          used_in_rules  train_docs(substr)  train_stem_match  test_docs(substr) STATUS
+paper         False          4631                True              1149              OK
+model         True           2148                True              535               OK
+use           False          4079                True              983               OK
+data          True           1859                True              432               OK
+method        False          2745                True              678               OK
+softwar       True           1676                True              383               OK
+fault         False          4250                True              1052              OK
+base          False          3764                True              937               OK
+error         False          2447                True              608               OK
+2026-10-03 11:01:48.867046 | Training done. 107.360s.
+2026-10-03 11:01:48.867200 | Testing...
+2026-10-03 11:01:48.878506 | Fold 0
+2026-10-03 11:01:48.878605 | accuracy,precision,recall,specificity,fmeasure,tp,fp,tn,fn,balancedAcc
+0.9775659001682557,0.17857142857142858,0.22727272727272727,0.986939239068711,0.2,5,23,1738,17,0.6071059831707191,0.6071059831707191,0
+2026-10-03 11:01:48.895498 | Fold 1
+2026-10-03 11:01:48.895587 | accuracy,precision,recall,specificity,fmeasure,tp,fp,tn,fn,balancedAcc
+0.9652076318742986,0.16393442622950818,0.47619047619047616,0.9710391822827938,0.24390243902439024,10,51,1710,11,0.723614829236635,0.723614829236635,0
+2026-10-03 11:01:48.928721 | Fold 2
+2026-10-03 11:01:48.928809 | accuracy,precision,recall,specificity,fmeasure,tp,fp,tn,fn,balancedAcc
+0.6481481481481481,0.030959752321981424,0.9523809523809523,0.6445201590005678,0.05997001499250374,20,626,1135,1,0.7984505556907601,0.7984505556907601,0
+2026-10-03 11:01:48.940176 | Fold 3
+2026-10-03 11:01:48.940225 | accuracy,precision,recall,specificity,fmeasure,tp,fp,tn,fn,balancedAcc
+0.978675645342312,0.22580645161290322,0.3333333333333333,0.9863713798977853,0.2692307692307692,7,24,1737,14,0.6598523566155593,0.6598523566155593,0
+2026-10-03 11:01:48.951470 | Fold 4
+2026-10-03 11:01:48.951526 | accuracy,precision,recall,specificity,fmeasure,tp,fp,tn,fn,balancedAcc
+0.9814814814814815,0.2692307692307692,0.3333333333333333,0.9892106757524134,0.2978723404255319,7,19,1742,14,0.6612720045428734,0.6612720045428734,0
+2026-10-03 11:01:48.952013 | Avg. accuracy: 0.910216
+2026-10-03 11:01:48.952053 | Avg. precision: 0.173701
+2026-10-03 11:01:48.952096 | Avg. recall: 0.464502
+2026-10-03 11:01:48.952136 | Avg. specificity: 0.915616
+2026-10-03 11:01:48.952175 | dataset;classStrategy;replStrategy;balAcc;accuracy;precision;recall;specificity;seed
+2026-10-03 11:01:48.952318 | Testing done. 0.085s.
+2026-10-03 11:01:48.952360 | Experiment End. 107.883s.
+2026-10-03 11:01:48.952402 | -------------
+
+=== SUMMARY ===
+Vocabulary: ['paper', 'model', 'use', 'data', 'method', 'softwar', 'fault', 'base', 'error']
+Fold 0: ALL vocabulary words present in train
+Fold 1: ALL vocabulary words present in train
+Fold 2: ALL vocabulary words present in train
+Fold 3: ALL vocabulary words present in train
+Fold 4: ALL vocabulary words present in train

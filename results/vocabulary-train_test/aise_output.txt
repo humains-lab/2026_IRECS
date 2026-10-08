@@ -1,0 +1,182 @@
+2026-10-03 11:06:54.712872 | New Experiment
+2026-10-03 11:06:54.713031 | Config. details:
+2026-10-03 11:06:54.713069 | Dataset: assets/aiseComplete.csv
+2026-10-03 11:06:54.713102 | Grammar: assets/ml.xml
+2026-10-03 11:06:54.713135 | Num. Folds: 5
+2026-10-03 11:06:54.713167 | Max. Generations: 10
+2026-10-03 11:06:54.713198 | Population size: 30
+2026-10-03 11:06:54.713232 | Fitness Threshold: 0.4
+2026-10-03 11:06:54.713266 | Replacement Strategy: ReplacementStrategy.NEWPOPULATION
+2026-10-03 11:06:54.713298 | Classification Strategy: ClassificationStrategy.CBA
+2026-10-03 11:06:54.713330 | Fitness Strategy: FitnessStrategy.CURRENT
+2026-10-03 11:06:54.713361 | Seed: 1
+2026-10-03 11:06:54.713391 | Loading data...
+2026-10-03 11:06:54.990087 | Data loaded. 0.277s.
+2026-10-03 11:06:54.990222 | Preparing text mining...
+2026-10-03 11:06:56.272968 | Text mining done. 1.282s.
+2026-10-03 11:06:56.273070 | Initializing classifier...
+2026-10-03 11:06:56.280885 | Classifier initialized. 0.008s.
+2026-10-03 11:06:56.280935 | Training...
+2026-10-03 11:06:56.280978 | Fold 0
+2026-10-03 11:07:01.489768 | Current gen.: 2 & AVG fitness: 0.6368671594982077
+2026-10-03 11:07:07.289566 | Current gen.: 4 & AVG fitness: 0.6518649193548386
+2026-10-03 11:07:13.017266 | Current gen.: 6 & AVG fitness: 0.6576383797653957
+2026-10-03 11:07:18.455802 | Current gen.: 8 & AVG fitness: 0.6576383797653957
+2026-10-03 11:07:24.325332 | Current gen.: 10 & AVG fitness: 0.6684055779569892
+2026-10-03 11:07:24.325857 | 0 rules are selected
+2026-10-03 11:07:24.325968 | 19840 instances are not covered
+2026-10-03 11:07:24.911766 | 2 rules are selected
+2026-10-03 11:07:24.911910 | 4224 instances are not covered
+2026-10-03 11:07:24.912161 | Classifier rules:
+2026-10-03 11:07:24.912213 | Rule 1: <= nCites 30 equals isCandidate False | Fitness: 0.7596 | Confidence: 0.7929
+2026-10-03 11:07:24.912266 | Rule 2: not < year 2013 equals isCandidate False | Fitness: 0.7868 | Confidence: 0.7874
+2026-10-03 11:07:24.912392 | |+rules=0-rules=2|
+
+=== FOLD 0: train=19840 test=4962 rules=2 rules_using_vocab=0 ===
+word          used_in_rules  train_docs(substr)  train_stem_match  test_docs(substr) STATUS
+analysi       False          5625                True              1375              OK
+test          False          5012                True              1265              OK
+system        False          9314                True              2342              OK
+approach      False          8962                True              2205              OK
+model         False          7690                True              1973              OK
+base          False          10842               True              2727              OK
+data          False          6967                True              1715              OK
+code          False          5837                True              1452              OK
+softwar       False          10535               True              2605              OK
+2026-10-03 11:07:50.575284 | Fold 1
+2026-10-03 11:07:56.315404 | Current gen.: 2 & AVG fitness: 0.6343916943856466
+2026-10-03 11:08:02.065995 | Current gen.: 4 & AVG fitness: 0.6343916943856466
+2026-10-03 11:08:07.221460 | Current gen.: 6 & AVG fitness: 0.6343916943856466
+2026-10-03 11:08:12.816728 | Current gen.: 8 & AVG fitness: 0.6343916943856466
+2026-10-03 11:08:18.900601 | Current gen.: 10 & AVG fitness: 0.6343916943856466
+2026-10-03 11:08:18.900922 | 0 rules are selected
+2026-10-03 11:08:18.900976 | 19842 instances are not covered
+2026-10-03 11:08:19.326697 | 2 rules are selected
+2026-10-03 11:08:19.326829 | 4225 instances are not covered
+2026-10-03 11:08:19.327110 | Classifier rules:
+2026-10-03 11:08:19.327168 | Rule 1: not >= nAuthors 10 equals isCandidate False | Fitness: 0.7257 | Confidence: 0.7874
+2026-10-03 11:08:19.327218 | Rule 2: not <= year 2000 equals isCandidate False | Fitness: 0.7868 | Confidence: 0.7873
+2026-10-03 11:08:19.327369 | |+rules=0-rules=2|
+
+=== FOLD 1: train=19842 test=4960 rules=2 rules_using_vocab=0 ===
+word          used_in_rules  train_docs(substr)  train_stem_match  test_docs(substr) STATUS
+analysi       False          5594                True              1406              OK
+test          False          5033                True              1244              OK
+system        False          9343                True              2313              OK
+approach      False          8916                True              2251              OK
+model         False          7783                True              1880              OK
+base          False          10882               True              2687              OK
+data          False          6949                True              1733              OK
+code          False          5878                True              1411              OK
+softwar       False          10552               True              2588              OK
+2026-10-03 11:08:45.133325 | Fold 2
+2026-10-03 11:08:50.838914 | Current gen.: 2 & AVG fitness: 0.7511051593301366
+2026-10-03 11:08:56.163593 | Current gen.: 4 & AVG fitness: 0.7140724221348653
+2026-10-03 11:09:01.765534 | Current gen.: 6 & AVG fitness: 0.7140724221348653
+2026-10-03 11:09:08.000096 | Current gen.: 8 & AVG fitness: 0.7140724221348653
+2026-10-03 11:09:13.277918 | Current gen.: 10 & AVG fitness: 0.7140724221348653
+2026-10-03 11:09:13.278306 | 0 rules are selected
+2026-10-03 11:09:13.278393 | 19842 instances are not covered
+2026-10-03 11:09:13.768133 | 2 rules are selected
+2026-10-03 11:09:13.768252 | 4225 instances are not covered
+2026-10-03 11:09:13.768339 | Classifier rules:
+2026-10-03 11:09:13.768394 | Rule 1: not >= nCites 31 equals isCandidate False | Fitness: 0.7588 | Confidence: 0.7931
+2026-10-03 11:09:13.768444 | Rule 2: not < year 2008 equals isCandidate False | Fitness: 0.7869 | Confidence: 0.7873
+2026-10-03 11:09:13.768591 | |+rules=0-rules=2|
+
+=== FOLD 2: train=19842 test=4960 rules=2 rules_using_vocab=0 ===
+word          used_in_rules  train_docs(substr)  train_stem_match  test_docs(substr) STATUS
+analysi       False          5575                True              1425              OK
+test          False          5017                True              1260              OK
+system        False          9338                True              2318              OK
+approach      False          8915                True              2252              OK
+model         False          7742                True              1921              OK
+base          False          10847               True              2722              OK
+data          False          6999                True              1683              OK
+code          False          5804                True              1485              OK
+softwar       False          10461               True              2679              OK
+2026-10-03 11:09:39.169438 | Fold 3
+2026-10-03 11:09:44.739492 | Current gen.: 2 & AVG fitness: 0.5824681651715217
+2026-10-03 11:09:50.473401 | Current gen.: 4 & AVG fitness: 0.5824681651715217
+2026-10-03 11:09:56.465613 | Current gen.: 6 & AVG fitness: 0.621169740953533
+2026-10-03 11:10:02.312193 | Current gen.: 8 & AVG fitness: 0.6357390048046232
+2026-10-03 11:10:08.548709 | Current gen.: 10 & AVG fitness: 0.650836609212781
+2026-10-03 11:10:08.549128 | 0 rules are selected
+2026-10-03 11:10:08.549179 | 19842 instances are not covered
+2026-10-03 11:10:09.052918 | 2 rules are selected
+2026-10-03 11:10:09.053054 | 4225 instances are not covered
+2026-10-03 11:10:09.053302 | Classifier rules:
+2026-10-03 11:10:09.053350 | Rule 1: < nAuthors 17 equals isCandidate False | Fitness: 0.7523 | Confidence: 0.7874
+2026-10-03 11:10:09.053393 | Rule 2: >= year 2004 equals isCandidate False | Fitness: 0.7867 | Confidence: 0.7873
+2026-10-03 11:10:09.053530 | |+rules=0-rules=2|
+
+=== FOLD 3: train=19842 test=4960 rules=2 rules_using_vocab=0 ===
+word          used_in_rules  train_docs(substr)  train_stem_match  test_docs(substr) STATUS
+analysi       False          5585                True              1415              OK
+test          False          5027                True              1250              OK
+system        False          9311                True              2345              OK
+approach      False          8925                True              2242              OK
+model         False          7722                True              1941              OK
+base          False          10843               True              2726              OK
+data          False          6891                True              1791              OK
+code          False          5801                True              1488              OK
+softwar       False          10529               True              2611              OK
+2026-10-03 11:10:34.271582 | Fold 4
+2026-10-03 11:10:40.368627 | Current gen.: 2 & AVG fitness: 0.6511188388267312
+2026-10-03 11:10:46.105543 | Current gen.: 4 & AVG fitness: 0.6556438723054991
+2026-10-03 11:10:51.371927 | Current gen.: 6 & AVG fitness: 0.6556438723054991
+2026-10-03 11:10:57.464976 | Current gen.: 8 & AVG fitness: 0.6777038604979336
+2026-10-03 11:11:03.261085 | Current gen.: 10 & AVG fitness: 0.6777038604979336
+2026-10-03 11:11:03.261475 | 0 rules are selected
+2026-10-03 11:11:03.261529 | 19842 instances are not covered
+2026-10-03 11:11:03.729824 | 2 rules are selected
+2026-10-03 11:11:03.729969 | 4225 instances are not covered
+2026-10-03 11:11:03.730228 | Classifier rules:
+2026-10-03 11:11:03.730282 | Rule 1: <= nCites 18 equals isCandidate False | Fitness: 0.7231 | Confidence: 0.7968
+2026-10-03 11:11:03.730330 | Rule 2: >= nAuthors 1 equals isCandidate False | Fitness: 0.7870 | Confidence: 0.7871
+2026-10-03 11:11:03.730464 | |+rules=0-rules=2|
+
+=== FOLD 4: train=19842 test=4960 rules=2 rules_using_vocab=0 ===
+word          used_in_rules  train_docs(substr)  train_stem_match  test_docs(substr) STATUS
+analysi       False          5621                True              1379              OK
+test          False          5019                True              1258              OK
+system        False          9318                True              2338              OK
+approach      False          8950                True              2217              OK
+model         False          7715                True              1948              OK
+base          False          10862               True              2707              OK
+data          False          6922                True              1760              OK
+code          False          5836                True              1453              OK
+softwar       False          10483               True              2657              OK
+2026-10-03 11:11:28.920489 | Training done. 272.642s.
+2026-10-03 11:11:28.920637 | Testing...
+2026-10-03 11:11:28.943187 | Fold 0
+2026-10-03 11:11:28.943259 | accuracy,precision,recall,specificity,fmeasure,tp,fp,tn,fn,balancedAcc
+0.786981056025796,0.0,0.0,1.0,0,0,0,3905,1057,0.5,0.5,0
+2026-10-03 11:11:28.969118 | Fold 1
+2026-10-03 11:11:28.969186 | accuracy,precision,recall,specificity,fmeasure,tp,fp,tn,fn,balancedAcc
+0.7870967741935484,0.0,0.0,1.0,0,0,0,3904,1056,0.5,0.5,0
+2026-10-03 11:11:28.994474 | Fold 2
+2026-10-03 11:11:28.994552 | accuracy,precision,recall,specificity,fmeasure,tp,fp,tn,fn,balancedAcc
+0.7870967741935484,0.0,0.0,1.0,0,0,0,3904,1056,0.5,0.5,0
+2026-10-03 11:11:29.015787 | Fold 3
+2026-10-03 11:11:29.015883 | accuracy,precision,recall,specificity,fmeasure,tp,fp,tn,fn,balancedAcc
+0.7870967741935484,0.0,0.0,1.0,0,0,0,3904,1056,0.5,0.5,0
+2026-10-03 11:11:29.038245 | Fold 4
+2026-10-03 11:11:29.038319 | accuracy,precision,recall,specificity,fmeasure,tp,fp,tn,fn,balancedAcc
+0.7870967741935484,0.0,0.0,1.0,0,0,0,3904,1056,0.5,0.5,0
+2026-10-03 11:11:29.038808 | Avg. accuracy: 0.787074
+2026-10-03 11:11:29.038844 | Avg. precision: 0.000000
+2026-10-03 11:11:29.038878 | Avg. recall: 0.000000
+2026-10-03 11:11:29.038913 | Avg. specificity: 1.000000
+2026-10-03 11:11:29.038947 | dataset;classStrategy;replStrategy;balAcc;accuracy;precision;recall;specificity;seed
+2026-10-03 11:11:29.039275 | Testing done. 0.118s.
+2026-10-03 11:11:29.039312 | Experiment End. 274.329s.
+2026-10-03 11:11:29.039346 | -------------
+
+=== SUMMARY ===
+Vocabulary: ['analysi', 'test', 'system', 'approach', 'model', 'base', 'data', 'code', 'softwar']
+Fold 0: ALL vocabulary words present in train
+Fold 1: ALL vocabulary words present in train
+Fold 2: ALL vocabulary words present in train
+Fold 3: ALL vocabulary words present in train
+Fold 4: ALL vocabulary words present in train
